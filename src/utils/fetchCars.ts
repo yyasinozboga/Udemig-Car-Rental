@@ -3,7 +3,7 @@ import { CarType } from "../types";
 const options: any = {
   url: "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars",
   headers: {
-    "x-rapidapi-key": "c3202f5227mshefb2446baaf43e6p1b2232jsn6cc6e405ba66",
+    "x-rapidapi-key": "ffe5fc4e7fmshf5d3285f861b5a4p1efcbajsn9dced4268bd3",
     "x-rapidapi-host": "cars-by-api-ninjas.p.rapidapi.com",
   },
 };

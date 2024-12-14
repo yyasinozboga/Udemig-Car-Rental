@@ -11,15 +11,15 @@ const Filter = () => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const selected = { model: model, year: year };
-    Object.entries(selected).forEach(([key, value]: any) => {
-      if (value) {
+    Object.entries(selected).forEach(([key, value]) => {
+      if (value !== "") {
         searchParams.set(key, value);
+      } else {
+        searchParams.delete(key);
       }
     });
 
     setSearchParams(searchParams);
-    setModel("");
-    setYear("");
   };
 
   interface Options {
@@ -34,10 +34,10 @@ const Filter = () => {
       } else {
         if (e.value !== "") {
           searchParams.set("fuel_type", e.value);
+        } else {
+          searchParams.delete("fuel_type");
         }
       }
-
-      setSearchParams(searchParams);
     }
   };
 

@@ -30,7 +30,7 @@ const Card = ({ item }: Props) => {
         <span className="font-semibold self-end">/gün</span>
       </div>
 
-      <img src={getImage(item)} alt="car-img" />
+      <img src={getImage(item)} alt="car-img" className="h-[250px]" />
 
       <div className="w-full">
         <div className="group-hover:hidden">

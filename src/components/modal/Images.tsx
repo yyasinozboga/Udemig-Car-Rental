@@ -10,10 +10,10 @@ const Images = ({ item }: Props) => {
   const images: string[] = ["29", "33", "13"];
 
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-3 items-center h-[120px]">
       {images.map((image, key) => (
-        <div key={key} className="py-3">
-          <img src={getImage(item, image)} alt="Car Image" />
+        <div key={key} className="py-3 h-full">
+          <img src={getImage(item, image)} alt="Car Image" className="h-full" />
         </div>
       ))}
     </div>
